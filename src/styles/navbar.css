@@ -109,9 +109,10 @@
         display: none; 
         position: absolute;
         top: 80px;
-        left: 0;
+        left: 50%;
         right: 0;
-        width: 100%;
+        transform: translateX(-50%);
+        width: 60%;
         flex-direction: column;
         background: var(--white);
         padding: 20px;

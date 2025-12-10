@@ -177,8 +177,11 @@
     .quote-wrapper { flex-direction: column-reverse; }
     .quote-img { margin: 0 auto; }
     .pillars-grid { grid-template-columns: 1fr 1fr; }
+    .cta-grid {grid-template-columns: 1fr; text-align: center;}
+    .cta-content p { margin-left: auto; margin-right: auto;}
+    .cta-btns { justify-content: center; }
 }
 @media (max-width: 500px) {
     .pillars-grid, .vm-grid { grid-template-columns: 1fr; }
-    .hero-btns { flex-direction: column; }
+    .hero-btns, .cta-btns { flex-direction: column; }
 }

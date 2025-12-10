@@ -20,7 +20,7 @@
 /* The Single Centered Card */
 .contact-single-card {
     max-width: 800px; /* Wider than the previous side-panel but contained */
-    margin: -80px auto 80px; /* Negative margin to overlap hero */
+    margin:  50px auto; /* Negative margin to overlap hero */
     background: var(--dark-blue); /* Dark theme for impact */
     color: var(--white);
     border-radius: var(--radius-lg);

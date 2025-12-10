@@ -1,5 +1,38 @@
 /* --- global.css --- */
 /* Variables & Reset */
+
+
+
+/* --- Custom Scrollbar (Global) --- */
+/* Firefox (Standard Property) */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-blue) #f0f4f8;
+}
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+/* The background track */
+::-webkit-scrollbar-track {
+    background: #f0f4f8;
+    border-radius: 0px;
+}
+/* The moving handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-blue); /* #5480de */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #f0f4f8; /* Creates padding around the handle */
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dark-blue); /* #1c2b4b */
+}
+
+
+
+
 :root {
     --primary-blue: #5480de;     
     --outreach-blue: #7aa7ff;    
