@@ -1,5 +1,4 @@
 // src/pages/Home.tsx
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useEffect, useRef } from "react";
 import TeamCard from "../components/TeamCard";
 import "../styles/index.css";
@@ -357,7 +356,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <SpeedInsights />
       </section>
     </>
   );
