@@ -24,9 +24,9 @@ const Donate = () => {
             <div className="bank-item">
               <i className="fas fa-university bank-icon"></i>
               <div className="bank-details">
-                <h3>99999999999</h3>
-                <span>Access Bank</span>
-                <p>P1 Million Souls</p>
+                <h3>2261152020</h3>
+                <span>Eco Bank</span>
+                <p>P One Million Souls</p>
               </div>
             </div>
             {/* Add second bank item here */}

@@ -91,17 +91,17 @@ const Contact = () => {
               className="social-links"
               style={{ justifyContent: "center", marginTop: "10px" }}
             >
-              <a href="#">
+              <a
+                href="https://www.instagram.com/p1millionsouls_cu/"
+                target="_blank"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#">
-                <i className="fab fa-telegram"></i>
-              </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/company/project-one-million-souls/"
+                target="_blank"
+              >
                 <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-twitter"></i>
               </a>
             </div>
           </div>
@@ -124,7 +124,11 @@ const Contact = () => {
           <p style={{ marginBottom: "30px", color: "var(--text-light)" }}>
             You don't just have to contact us, you can become one of us.
           </p>
-          <Link to="/volunteer" className="btn btn-secondary">
+          <Link
+            to="https://bit.ly/P1Membership"
+            target="_blank"
+            className="btn btn-secondary"
+          >
             Volunteer Form
           </Link>
         </div>

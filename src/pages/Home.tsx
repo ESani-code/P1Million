@@ -108,7 +108,11 @@ const Home = () => {
             people by acts of love and meeting a million souls per time.
           </p>
           <div className="hero-btns">
-            <a href="/volunteer" className="btn btn-primary">
+            <a
+              href="https://bit.ly/P1Membership"
+              target="_blanks"
+              className="btn btn-primary"
+            >
               Become a Volunteer
             </a>
             <a href="#outreaches" className="btn btn-secondary">

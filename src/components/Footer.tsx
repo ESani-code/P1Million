@@ -53,17 +53,18 @@ const Footer = () => {
             <h4>Socials</h4>
             <ul className="social-list-text">
               <li>
-                <a href="#">
+                <a
+                  href="https://www.instagram.com/p1millionsouls_cu/"
+                  target="_blank"
+                >
                   <i className="fab fa-instagram" /> Instagram
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fab fa-telegram" /> Telegram
-                </a>
-              </li>
-              <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/company/project-one-million-souls/"
+                  target="_blank"
+                >
                   <i className="fab fa-linkedin" /> LinkedIn
                 </a>
               </li>
