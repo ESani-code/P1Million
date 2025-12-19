@@ -53,6 +53,16 @@ const Navbar = () => {
               Outreaches
             </Link>
           </li>
+
+          <li>
+            <Link
+              to="/executives"
+              className={`pill-link-item ${isActive("/executives")}`}
+              onClick={() => setIsNavOpen(false)}
+            >
+              Meet the Team
+            </Link>
+          </li>
           <li>
             <Link
               to="/contact"

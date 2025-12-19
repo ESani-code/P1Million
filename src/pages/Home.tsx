@@ -346,7 +346,11 @@ const Home = () => {
                 Movement Today!
               </p>
               <div className="cta-btns">
-                <a href="volunteer.html" className="btn btn-primary">
+                <a
+                  href="https://bit.ly/P1Membership"
+                  className="btn btn-primary"
+                  target="_blank"
+                >
                   Membership
                 </a>
                 <a

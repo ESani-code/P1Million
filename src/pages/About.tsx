@@ -68,7 +68,7 @@ const About = () => {
             <div className="history-img">
               {/* Using a placeholder meeting image - replace with actual history photo if available */}
               <img
-                src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80"
+                src="https://res.cloudinary.com/don03rsnm/image/upload/v1765369502/REMAND_HOME_OUTREACH_igcixn.jpg"
                 alt="Group Meeting"
               />
             </div>
@@ -331,13 +331,20 @@ const About = () => {
           <div
             style={{ display: "flex", gap: "20px", justifyContent: "center" }}
           >
-            <Link
-              to="/volunteer"
-              className="btn"
-              style={{ background: "white", color: "var(--primary-blue)" }}
-            >
-              Become a Member
-            </Link>
+            <div className="cta-btns">
+              <a
+                href="https://bit.ly/P1Membership"
+                className="btn"
+                target="_blank"
+                style={{
+                  background: "white",
+                  color: "var(--primary-blue)",
+                }}
+              >
+                Become a Member
+              </a>
+            </div>
+
             <Link
               to="/donate"
               className="btn"

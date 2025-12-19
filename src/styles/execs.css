@@ -1,0 +1,101 @@
+/* src/styles/execs.css */
+
+/* Hero Section (Reusing similar style to others for consistency) */
+.exec-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/don03rsnm/image/upload/v1766164373/photo_2025-12-19_18-11-04_a6f5hh.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding-top: 80px;
+}
+.exec-hero h1 { font-size: 3.5rem; margin-bottom: 15px; }
+.exec-hero p { font-size: 1.1rem; opacity: 0.9; font-weight: 300; max-width: 600px; margin: 0 auto; }
+
+/* The Grid */
+.exec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+/* The Card */
+.exec-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 4px solid var(--primary-blue); /* Brand accent */
+}
+
+.exec-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Image Area */
+.exec-img-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #f4f6fa;
+}
+
+.exec-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.exec-card:hover .exec-img-wrapper img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Text Content */
+.exec-content {
+    padding: 25px;
+}
+
+.exec-role {
+    color: var(--primary-blue);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.exec-name {
+    font-size: 1.4rem;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.exec-team {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Special Badge for Top Execs */
+.badge-core {
+    background-color: var(--light-blue-bg);
+    color: var(--dark-blue);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}

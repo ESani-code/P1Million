@@ -58,6 +58,7 @@
 .pillar-card:hover { transform: translateY(-5px); }
 .pillar-card i { font-size: 2.5rem; color: var(--primary-green); margin-bottom: 20px; }
 
+
 /* Teams List Section */
 .teams-layout {
     display: grid;

@@ -7,6 +7,7 @@ import Donate from "./pages/Donate";
 import Outreaches from "./pages/Outreaches";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Execs from "./pages/execs";
 // Import other pages as you create them
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/outreaches" element={<Outreaches />} />
           <Route path="/about" element={<About />} />
+          <Route path="/executives" element={<Execs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
