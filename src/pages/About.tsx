@@ -14,7 +14,7 @@ const About = () => {
       {/* 1. Page Header */}
       <section className="page-hero">
         <div className="container">
-          <h1>About Our Family</h1>
+          <h1>About Our Organization</h1>
           <p>
             One Indivisible and Indissoluble Christian Organization Under God
           </p>

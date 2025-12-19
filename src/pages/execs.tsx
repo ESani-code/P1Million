@@ -16,105 +16,126 @@ const Execs = () => {
       position: "Project Coordinator",
       role: "Overall Leadership",
       image:
-        "https://ui-avatars.com/api/?name=Oyebanjo+Priscilla&background=5480de&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173227/image18_rq9ha9.jpg",
     },
     {
       name: "Precious Edionwe",
       position: "Asst. Project Coordinator",
       role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Precious+Edionwe&background=1c2b4b&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766174422/image11_jpm92g.jpg",
     },
     {
       name: "Anjolaoluwa Adekomi",
       position: "Asst. Project Coordinator",
-      role: "Special Duties",
+      role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Anjolaoluwa+Adekomi&background=1c2b4b&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766174524/image8_vtc0zy.jpg",
     },
     {
       name: "Bolaji Oluwatobiloba",
       position: "General Secretary",
-      role: "Secretariat",
+      role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Bolaji+Oluwatobiloba&background=e6effc&color=1c2b4b&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173213/image6_d0a2il.jpg",
     },
     {
       name: "Christine Chineme",
       position: "Asst. General Secretary",
-      role: "Secretariat",
+      role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Christine+Chineme&background=e6effc&color=1c2b4b&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766174612/image10_azcxv6.jpg",
     },
     {
       name: "Uduak Favour",
       position: "Financial Secretary",
-      role: "Finance",
+      role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Uduak+Favour&background=53b940&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173197/image15_j5decl.jpg",
     },
     {
       name: "Ojeagbase Peace",
       position: "Asst. Financial Secretary",
-      role: "Finance",
+      role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Ojeagbase+Peace&background=53b940&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766174695/image12_hnow7u.jpg",
     },
     {
       name: "Odunayo Ekunjesu",
       position: "Public Relations Officer",
       role: "Publicity & Media",
       image:
-        "https://ui-avatars.com/api/?name=Odunayo+Ekunjesu&background=5480de&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173501/image4_zxz991.jpg",
     },
     {
       name: "Oludamilola Olayinka-Davis",
       position: "Welfare Officer",
-      role: "Member Welfare",
+      role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Oludamilola+O&background=5480de&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766174804/image3_y2rluu.jpg",
     },
     {
       name: "Abisola Ojo",
       position: "Operations Officer",
-      role: "Logistics & Operations",
+      role: "Administration",
       image:
-        "https://ui-avatars.com/api/?name=Abisola+Ojo&background=5480de&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173200/image17_jkbo6g.jpg",
     },
     {
       name: "Nifesimi Oke",
       position: "Team Lead",
       role: "Special Cases Team",
       image:
-        "https://ui-avatars.com/api/?name=Nifesimi+Oke&background=7aa7ff&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173196/image14_jn2b4q.jpg",
     },
     {
       name: "Favor Bigila",
       position: "Team Lead",
       role: "Remand Home Team",
       image:
-        "https://ui-avatars.com/api/?name=Favor+Bigila&background=7aa7ff&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173215/image7_bnbdng.jpg",
     },
     {
       name: "Maryam Abdulkarim",
       position: "Team Lead",
       role: "Orphanage Team",
       image:
-        "https://ui-avatars.com/api/?name=Maryam+Abdulkarim&background=7aa7ff&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766174913/image5_hoesrh.jpg",
     },
     {
       name: "Favour Esogban",
       position: "Team Lead",
       role: "Primary & Secondary School",
       image:
-        "https://ui-avatars.com/api/?name=Favour+Esogban&background=7aa7ff&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173196/image13_ppanxy.jpg",
     },
     {
       name: "Angel Nwokolo",
       position: "Team Lead",
       role: "Hospital Support Team",
       image:
-        "https://ui-avatars.com/api/?name=Angel+Nwokolo&background=7aa7ff&color=fff&size=512",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766175004/image16_eytafd.jpg",
+    },
+    {
+      name: "Kamto Anigbogu",
+      position: "Team Lead",
+      role: "Destitute Support Team Lead",
+      image:
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766175064/image2_k8cypk.jpg",
+    },
+    {
+      name: "Marvel Agi",
+      position: "Team Lead",
+      role: "Home of the Aged Team Lead",
+      image:
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173205/image1_hzegtb.jpg",
+    },
+    {
+      name: "Ajisafe Tofunmi",
+      position: "Team Lead",
+      role: "Prison Support Team Lead",
+      image:
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766173216/image9_d3ara3.jpg",
     },
   ];
 

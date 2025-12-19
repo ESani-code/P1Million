@@ -23,7 +23,7 @@
     position: relative;
     z-index: 10;
 }
-.donate-left { background: #4a4a4a url("https://res.cloudinary.com/don03rsnm/image/upload/v1765229139/PRIMARY_SCHOOL_OUTREACH.png"); min-height: 400px; }
+.donate-left { background: #4a4a4a url("https://res.cloudinary.com/don03rsnm/image/upload/v1766176447/photo_2025-12-19_18-10-39_la5vqv.jpg"); background-size: cover; background-position: center; height: 100%; min-height: 400px; }
 .donate-right { padding: 60px; display: flex; flex-direction: column; justify-content: center; }
 .donate-right h2 { color: var(--primary-blue); font-size: 2rem; margin-bottom: 40px; }
 

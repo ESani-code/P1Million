@@ -1,7 +1,7 @@
 /* --- index.css --- */
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/don03rsnm/image/upload/v1765369313/P1_ydmjs1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.671)), url('https://res.cloudinary.com/don03rsnm/image/upload/v1765369313/P1_ydmjs1.jpg');
     background-size: cover; background-position: center;
     height: 95vh; min-height: 600px;
     display: flex; align-items: center; justify-content: center;
