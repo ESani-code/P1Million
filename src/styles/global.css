@@ -23,7 +23,7 @@ html {
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-blue); /* #5480de */
     border-radius: 10px; /* Rounded corners */
-    border: 2px solid #f0f4f8; /* Creates padding around the handle */
+    border: 15px solid #f0f4f8; /* Creates padding around the handle */
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
