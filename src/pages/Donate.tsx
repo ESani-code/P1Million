@@ -26,7 +26,7 @@ const Donate = () => {
               <div className="bank-details">
                 <h3>2261152020</h3>
                 <span>Eco Bank</span>
-                <p>P One Million Souls</p>
+                <p>Project One Million Souls</p>
               </div>
             </div>
             {/* Add second bank item here */}
