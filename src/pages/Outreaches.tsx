@@ -20,7 +20,7 @@ const Outreaches = () => {
         "Distributing food, clothing, and essential survival supplies.",
       ],
       image:
-        "https://res.cloudinary.com/don03rsnm/image/upload/v1765369309/PRISON_OUTREACH_yt2w1v.jpg",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766857579/photo_2025-12-19_18-10-57_pccg6o.jpg",
       reverse: false,
     },
     {

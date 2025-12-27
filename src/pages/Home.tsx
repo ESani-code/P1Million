@@ -3,11 +3,134 @@ import { useEffect, useRef } from "react";
 import TeamCard from "../components/TeamCard";
 import "../styles/index.css";
 import "../styles/global.css"; // Specific styles for home
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
+// --- TYPES ---
+interface MediaItem {
+  type: "image" | "video";
+  url: string;
+}
+
+interface EventProps {
+  title: string;
+  date: string;
+  media: MediaItem[];
+}
+
+// --- HELPER COMPONENT: Event Card with Slideshow ---
+const EventCard = ({ title, date, media }: EventProps) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === media.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? media.length - 1 : prev - 1));
+  };
+
+  return (
+    <div className="event-card">
+      <div className="event-header">
+        <h3>{title}</h3>
+        <div className="event-date">
+          <i className="far fa-calendar-alt"></i> <span>{date}</span>
+        </div>
+      </div>
+
+      <div className="event-slideshow">
+        {media.length > 1 && (
+          <button className="slide-btn prev" onClick={prevSlide}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+        )}
+
+        <div className="media-container">
+          {media[currentIndex].type === "image" ? (
+            <img
+              src={media[currentIndex].url}
+              alt={`${title} slide`}
+              className="event-media"
+            />
+          ) : (
+            <video
+              src={media[currentIndex].url}
+              controls
+              className="event-media"
+            />
+          )}
+        </div>
+
+        {media.length > 1 && (
+          <button className="slide-btn next" onClick={nextSlide}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        )}
+
+        {/* Slide Indicators */}
+        {media.length > 1 && (
+          <div className="slide-dots">
+            {media.map((_, idx) => (
+              <span
+                key={idx}
+                className={`dot ${idx === currentIndex ? "active" : ""}`}
+                onClick={() => setCurrentIndex(idx)}
+              ></span>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 const Home = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const scrollSpeedRef = useRef(1); // Controls speed and direction
   const isPausedRef = useRef(false); // NEW: Tracks if user is hovering/touching
+
+  // DATA: Easy to Add/Remove Events here
+  const upcomingEvents: EventProps[] = [
+    {
+      title: "Charity Meets Photography",
+      date: "October 15, 2025",
+      media: [
+        {
+          type: "image",
+          url: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80",
+        },
+        {
+          type: "image",
+          url: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&q=80",
+        },
+      ],
+    },
+    {
+      title: "World Kindness Day",
+      date: "November 13, 2025",
+      media: [
+        {
+          type: "video", // Example Video
+          url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        },
+        {
+          type: "image",
+          url: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80",
+        },
+      ],
+    },
+    {
+      title: "Food Drive Initiative",
+      date: "December 20, 2025",
+      media: [
+        {
+          type: "image",
+          url: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80",
+        },
+      ],
+    },
+  ];
 
   const teamsData = [
     {
@@ -15,7 +138,7 @@ const Home = () => {
       description:
         "Catering to the homeless, disabled, and displaced families through relief materials.",
       imageSrc:
-        "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80",
+        "https://res.cloudinary.com/don03rsnm/image/upload/v1766857579/photo_2025-12-19_18-10-57_pccg6o.jpg",
       link: "/outreaches",
     },
     {
@@ -96,7 +219,7 @@ const Home = () => {
 
   return (
     <>
-      {/* HERO SECTION */}
+      {/* 1. HERO SECTION */}
       <section className="hero">
         <div className="container">
           <h1>
@@ -107,18 +230,18 @@ const Home = () => {
             Dedicated to transforming lives... Dedicated to opening doors to
             people by acts of love and meeting a million souls per time.
           </p>
-          <div className="hero-btns">
-            <a
-              href="https://bit.ly/P1Membership"
-              target="_blanks"
-              className="btn btn-primary"
-            >
-              Become a Volunteer
-            </a>
-            <a href="#outreaches" className="btn btn-secondary">
-              Explore our Impact
-            </a>
-          </div>
+          <Link to="/about" className="btn btn-primary">
+            Learn More{" "}
+            <i className="fas fa-info-circle" style={{ marginLeft: "8px" }}></i>
+          </Link>
+          <Link
+            to="/donate"
+            className="btn btn-secondary"
+            style={{ background: "rgba(255,255,255,0.1)" }}
+          >
+            Donate Now{" "}
+            <i className="fas fa-heart" style={{ marginLeft: "8px" }}></i>
+          </Link>
         </div>
       </section>
 
@@ -153,9 +276,13 @@ const Home = () => {
                 <span>- 1st Corinthians 16:14</span>
               </div>
 
-              <a href="/Donate" className="btn btn-primary">
-                Support Us
-              </a>
+              <Link to="/donate" className="btn btn-primary">
+                Support Us{" "}
+                <i
+                  className="fas fa-hand-holding-heart"
+                  style={{ marginLeft: "8px" }}
+                ></i>
+              </Link>
             </div>
           </div>
         </div>
@@ -320,8 +447,34 @@ const Home = () => {
         </div>
       </section>
 
+      {/* 4. NEW: Upcoming Events Section */}
+      <section className="section-padding">
+        <div className="container">
+          <div className="section-title">
+            <h2>Upcoming Events</h2>
+            <p>Mark your calendars and join us for our next big outreach.</p>
+          </div>
+
+          <div className="events-grid">
+            {upcomingEvents.map((event, index) => (
+              <EventCard
+                key={index}
+                title={event.title}
+                date={event.date}
+                media={event.media}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* MEMBERSHIP & DONATION CTA */}
       <section className="membership-cta">
+        {/* ADDED OPAQUE BACKGROUND ICON */}
+        <div className="cta-background-icon">
+          <i className="fas fa-hand-holding-heart"></i>
+        </div>
+
         <div className="container">
           <div className="cta-grid">
             <div className="cta-image-collage">
@@ -351,20 +504,30 @@ const Home = () => {
                   className="btn btn-primary"
                   target="_blank"
                 >
-                  Membership
+                  Membership{" "}
+                  <i className="fas fa-users" style={{ marginLeft: "8px" }}></i>
                 </a>
-                <a
+                <a // Changed Link to a tag based on user file upload, but standardizing to Link is fine if route is internal
                   href="/Donate"
                   className="btn btn-secondary"
                   style={{ background: "var(--dark-blue)" }}
                 >
-                  Donations
+                  Donations{" "}
+                  <i
+                    className="fas fa-hand-holding-usd"
+                    style={{ marginLeft: "8px" }}
+                  ></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* 6. NEW: Join Movement Banner (Full Width) */}
+      <div className="movement-banner">
+        <h2>Join the Movement Today!</h2>
+      </div>
     </>
   );
 };

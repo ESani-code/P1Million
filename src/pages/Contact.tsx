@@ -53,24 +53,7 @@ const Contact = () => {
                 <i className="fas fa-envelope"></i>
               </div>
               <h3>Email Us</h3>
-              <p>
-                info@onemillionsouls.org
-                <br />
-                support@p1million.org
-              </p>
-            </div>
-
-            {/* Phone */}
-            <div className="contact-item-box">
-              <div className="contact-icon-lg">
-                <i className="fas fa-phone-alt"></i>
-              </div>
-              <h3>Call Us</h3>
-              <p>
-                +234 800 000 0000
-                <br />
-                +234 900 000 0000
-              </p>
+              <p>projectonemillion@covenantuniversity.edu.ng</p>
             </div>
           </div>
 

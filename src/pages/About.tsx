@@ -218,22 +218,9 @@ const About = () => {
               </div>
             </div>
 
-            {/* Right Col: Functional Teams */}
+            {/* Right Col: Units */}
             <div className="team-category">
-              <h3>Functional Teams</h3>
-
-              <div className="team-list-item">
-                <div className="team-list-icon">
-                  <i className="fas fa-bullhorn"></i>
-                </div>
-                <div className="team-list-text">
-                  <h4>Evangelism Team</h4>
-                  <p>
-                    Responsible for organizing outreaches, follow-up of souls,
-                    and coordinating spiritual activities.
-                  </p>
-                </div>
-              </div>
+              <h3>Community Units</h3>
 
               <div className="team-list-item">
                 <div className="team-list-icon">
@@ -250,26 +237,12 @@ const About = () => {
 
               <div className="team-list-item">
                 <div className="team-list-icon">
-                  <i className="fas fa-user-md"></i>
+                  <i className="fa-solid fa-bullhorn"></i>
                 </div>
                 <div className="team-list-text">
-                  <h4>Medical Team</h4>
+                  <h4>Public Relations Team</h4>
                   <p>
-                    Provides medical aid during outreaches and attends to health
-                    emergencies within the group.
-                  </p>
-                </div>
-              </div>
-
-              <div className="team-list-item">
-                <div className="team-list-icon">
-                  <i className="fas fa-theater-masks"></i>
-                </div>
-                <div className="team-list-text">
-                  <h4>Drama & Variety Team</h4>
-                  <p>
-                    Uses creative arts (drama, dance, music) to communicate the
-                    message of hope and love.
+                    Provides the public with necessary and approved information
                   </p>
                 </div>
               </div>
@@ -279,23 +252,10 @@ const About = () => {
                   <i className="fas fa-truck-loading"></i>
                 </div>
                 <div className="team-list-text">
-                  <h4>Logistics Team</h4>
+                  <h4>Operations Team</h4>
                   <p>
-                    Handles transportation, venue setup, and equipment
-                    management for all events.
-                  </p>
-                </div>
-              </div>
-
-              <div className="team-list-item">
-                <div className="team-list-icon">
-                  <i className="fas fa-pray"></i>
-                </div>
-                <div className="team-list-text">
-                  <h4>Prayer Team</h4>
-                  <p>
-                    The spiritual engine room, interceding for the success of
-                    the organization and its members.
+                    Ensures that sound systems and other logistics are available
+                    during meetings and whenever necessary.
                   </p>
                 </div>
               </div>
@@ -341,7 +301,8 @@ const About = () => {
                   color: "var(--primary-blue)",
                 }}
               >
-                Become a Member
+                Become a Member{" "}
+                <i className="fas fa-users" style={{ marginLeft: "8px" }}></i>
               </a>
             </div>
 
@@ -350,7 +311,11 @@ const About = () => {
               className="btn"
               style={{ background: "var(--dark-blue)", color: "white" }}
             >
-              Make a Donation
+              Make a Donation{" "}
+              <i
+                className="fas fa-hand-holding-usd"
+                style={{ marginLeft: "8px" }}
+              ></i>
             </Link>
           </div>
         </div>

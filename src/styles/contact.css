@@ -19,7 +19,7 @@
 
 /* The Single Centered Card */
 .contact-single-card {
-    max-width: 800px; /* Wider than the previous side-panel but contained */
+    max-width: 1000px; /* Wider than the previous side-panel but contained */
     margin:  50px auto; /* Negative margin to overlap hero */
     background: var(--dark-blue); /* Dark theme for impact */
     color: var(--white);
@@ -53,7 +53,7 @@
 /* Grid for the 3 Contact Points */
 .contact-grid-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin-top: 40px;
     margin-bottom: 40px;

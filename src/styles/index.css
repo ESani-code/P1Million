@@ -162,13 +162,164 @@
 
 /* Membership CTA */
 .membership-cta { background: var(--primary-blue); color: var(--white); border-radius: 30px 30px 0 0; padding: 80px 0; margin-top: 50px; position: relative; overflow: hidden; }
-.cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+
+.cta-background-icon {
+    position: absolute;
+    top: 50%;
+    right: -50px; /* Shifts it slightly off-screen */
+    transform: translateY(-50%);
+    font-size: 25rem; /* Massive size */
+    color: rgba(255, 255, 255, 0.098); /* Very faint white */
+    z-index: 0; /* Behind content */
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; position: relative;}
 .cta-image-collage { position: relative; height: 300px; }
 .cta-image-collage img { border-radius: var(--radius-lg); border: 3px solid var(--white); position: absolute; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
 .cta-content h2 { color: var(--white); font-size: 3rem; margin-bottom: 20px; }
 .cta-content p { color: rgba(255,255,255,0.9); margin-bottom: 30px; max-width: 500px; }
 .cta-btns { display: flex; gap: 15px; }
 
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 0px;
+}
+
+.event-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-header h3 {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+.event-date {
+    font-size: 0.8rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--light-blue-bg);
+    padding: 6px 12px;
+    border-radius: 20px;
+    line-height: 15px;
+}
+
+/* Slideshow Container */
+.event-slideshow {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    background: #000;
+    overflow: hidden;
+}
+
+.media-container {
+    width: 100%;
+    height: 100%;
+}
+
+.event-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the box neatly */
+}
+
+/* Slideshow Buttons */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.slide-btn:hover { background: var(--primary-blue); }
+.slide-btn.prev { left: 10px; }
+.slide-btn.next { right: 10px; }
+
+/* Slide Dots (Indicators) */
+.slide-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 5;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: var(--primary-blue);
+    transform: scale(1.2);
+}
+
+
+/* === NEW: MOVEMENT BANNER === */
+.movement-banner {
+    background: var(--dark-blue); /* Contrasts nicely with the blue CTA */
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.movement-banner h2 {
+    margin: 0;
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--primary-blue); /* Using the green brand color for impact */
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .events-grid { grid-template-columns: 1fr; }
+    .event-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .movement-banner h2 { font-size: 3rem; }
+}
 /* Index Responsive */
 @media (max-width: 900px) {
     .hero h1 { font-size: 2.5rem; }

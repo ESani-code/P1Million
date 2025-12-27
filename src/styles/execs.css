@@ -92,10 +92,22 @@
 
 /* Special Badge for Top Execs */
 .badge-core {
-    background-color: var(--light-blue-bg);
+    display: inline-block; /* Allows padding and width to work correctly */
+    background-color: #f0f4f8; /* Very light blue-grey (Matches global scrollbar track) */
     color: var(--dark-blue);
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    
+    /* Box Shape */
+    padding: 12px 20px;
+    border-radius: 20px; /* Gives the rounded corners */
+    border: 1px solid rgba(84, 128, 222, 0.15); /* Faint primary blue border */
+    
+    /* Typography */
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: italic; /* Makes it look like a quote */
+    line-height: 1.5;
+    
+    /* Spacing */
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); /* Subtle lift effect */
 }
