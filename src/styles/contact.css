@@ -106,7 +106,91 @@
 .contact-scripture { font-style: italic; opacity: 0.8; max-width: 500px; margin: 0 auto; }
 
 /* Responsive */
+
+/* --- RESPONSIVE STYLES --- */
+
+/* Tablets / iPads (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .contact-single-card {
+        width: 90%; /* Prevents card from touching edges */
+        padding: 40px 20px;
+        margin: 40px auto;
+    }
+
+    .contact-grid-items {
+        /* Auto-fit: Will switch to 2 columns if space is tight */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
+
 @media (max-width: 768px) {
     .contact-grid-items { grid-template-columns: 1fr; gap: 20px; }
     .contact-single-card { width: 90%; padding: 40px 20px; }
+}
+
+
+
+/* Mobile Phones (max-width: 600px) */
+@media (max-width: 600px) {
+    .contact-hero {
+        padding-top: 100px;
+        height: auto;
+        min-height: 350px;
+        padding-bottom: 50px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.5rem; /* Smaller font for mobile */
+    }
+
+    .contact-single-card {
+        width: 95%;
+        margin: 20px auto;
+        padding: 30px 15px; /* Less padding to save space */
+    }
+
+    .contact-grid-items {
+        grid-template-columns: 1fr; /* Force 1 column (Stack vertically) */
+        gap: 20px;
+    }
+    
+    .contact-item-box {
+        padding: 20px 15px;
+    }
+}
+
+
+/* Small Phones (max-width: 400px) - NEW ADDITION */
+@media (max-width: 400px) {
+    .contact-hero h1 {
+        font-size: 2rem; /* Even smaller title */
+    }
+    
+    .contact-single-card h2 {
+        font-size: 1.5rem !important; /* Force smaller card title */
+    }
+
+    .contact-icon-lg {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    /* Reduce text size inside the boxes */
+    .contact-item-box h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .contact-item-box p, 
+    .contact-item-box a {
+        font-size: 0.85rem !important; /* Smaller body text */
+    }
+    
+    .contact-single-card {
+        padding: 20px 10px; /* Minimal padding */
+    }
 }

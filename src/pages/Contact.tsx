@@ -32,7 +32,7 @@ const Contact = () => {
             Reach out to us through any of the channels below.
           </p>
 
-          {/* The 3-Column Grid */}
+          {/* The 2-Column Grid */}
           <div className="contact-grid-items">
             {/* Location */}
             <div className="contact-item-box">
@@ -53,7 +53,10 @@ const Contact = () => {
                 <i className="fas fa-envelope"></i>
               </div>
               <h3>Email Us</h3>
-              <p>projectonemillion@covenantuniversity.edu.ng</p>
+              <p>
+                projectonemillion <br />
+                @covenantuniversity.edu.ng
+              </p>
             </div>
           </div>
 
