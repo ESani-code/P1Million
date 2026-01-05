@@ -14,14 +14,14 @@ const Execs = () => {
     {
       name: "Oyebanjo Priscilla",
       position: "Project Coordinator",
-      quote: "Overall Leadership",
+      quote: "Ubuntu- I am, because we are",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766173227/image18_rq9ha9.jpg",
     },
     {
       name: "Precious Edionwe",
       position: "Asst. Project Coordinator",
-      quote: "Administration",
+      quote: "",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766174422/image11_jpm92g.jpg",
     },
@@ -42,7 +42,7 @@ const Execs = () => {
     {
       name: "Christine Chineme",
       position: "Asst. General Secretary",
-      quote: "Administration",
+      quote: "",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766174612/image10_azcxv6.jpg",
     },
@@ -71,7 +71,7 @@ const Execs = () => {
     {
       name: "Oludamilola Olayinka-Davis",
       position: "Welfare Officer",
-      quote: "Administration",
+      quote: "",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766174804/image3_y2rluu.jpg",
     },
