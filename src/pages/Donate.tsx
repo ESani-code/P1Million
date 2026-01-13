@@ -12,7 +12,6 @@ const Donate = () => {
             <br />
             with a small charity
           </h1>
-          <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum...</p>
         </div>
       </section>
 
