@@ -107,7 +107,7 @@ const Home = () => {
       ],
     },
     {
-      title: "World Kindness Day",
+      title: "Primary and Secondary School Outreach",
       date: "November 13, 2025",
       media: [
         {
@@ -121,7 +121,7 @@ const Home = () => {
       ],
     },
     {
-      title: "Food Drive Initiative",
+      title: "Destitute Support Outreach",
       date: "December 20, 2025",
       media: [
         {
