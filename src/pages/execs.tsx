@@ -21,7 +21,7 @@ const Execs = () => {
     {
       name: "Precious Edionwe",
       position: "Asst. Project Coordinator",
-      quote: "",
+      quote: "To be great you must be to look ahead,think ahead and act ahead",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766174422/image11_jpm92g.jpg",
     },
@@ -42,7 +42,7 @@ const Execs = () => {
     {
       name: "Christine Chineme",
       position: "Asst. General Secretary",
-      quote: "",
+      quote: "Let love lead",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766174612/image10_azcxv6.jpg",
     },
@@ -71,7 +71,7 @@ const Execs = () => {
     {
       name: "Oludamilola Olayinka-Davis",
       position: "Welfare Officer",
-      quote: "",
+      quote: "Let love lead",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766174804/image3_y2rluu.jpg",
     },
@@ -85,7 +85,7 @@ const Execs = () => {
     {
       name: "Nifesimi Oke",
       position: "Special Cases Team Lead",
-      quote: "",
+      quote: "Let love lead",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766173196/image14_jn2b4q.jpg",
     },
@@ -108,7 +108,7 @@ const Execs = () => {
     {
       name: "Favour Esogban",
       position: "Primary & Secondary School Lead",
-      quote: "",
+      quote: "Let love lead",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766173196/image13_ppanxy.jpg",
     },
