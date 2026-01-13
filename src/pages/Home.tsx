@@ -4,13 +4,13 @@ import TeamCard from "../components/TeamCard";
 import "../styles/index.css";
 import "../styles/global.css"; // Specific styles for home
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 // --- TYPES ---
-interface MediaItem {
-  type: "image" | "video";
-  url: string;
-}
+// interface MediaItem {
+//   type: "image" | "video";
+//   url: string;
+// }
 
 // interface EventProps {
 //   title: string;
@@ -452,7 +452,7 @@ const Home = () => {
         <div className="container">
           <div className="section-title">
             <h2>Upcoming Events</h2>
-            <p>Mark your calendars and join us for our next big outreach.</p>
+            <p>Stay tuned to find out</p>
           </div>
 
           {/* <div className="events-grid">
