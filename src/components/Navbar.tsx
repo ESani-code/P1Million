@@ -17,84 +17,84 @@ const Navbar = () => {
 
   return (
     <>
-      {/* The Floating Pill Container */}
-      <header className="pill-nav-container">
-        {/* Logo Section */}
-        <Link to="/" className="logo-link">
-          <img src={logoImg} alt="Logo" className="nav-logo-pill" />
+      {/* 1. The Main Wrapper (Centers everything) */}
+      <div className="navbar-centered-wrapper">
+        {/* 2. Independent Circular Logo (Left) */}
+        <Link to="/" className="nav-logo-circle">
+          <img src={logoImg} alt="Logo" />
         </Link>
 
-        {/* Navigation Links (The Pills) */}
-        <ul className={`pill-links ${isNavOpen ? "open" : ""}`}>
-          <li>
-            <Link
-              to="/"
-              className={`pill-link-item ${isActive("/")}`}
-              onClick={() => setIsNavOpen(false)}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className={`pill-link-item ${isActive("/about")}`}
-              onClick={() => setIsNavOpen(false)}
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/outreaches"
-              className={`pill-link-item ${isActive("/outreaches")}`}
-              onClick={() => setIsNavOpen(false)}
-            >
-              Outreaches
-            </Link>
-          </li>
+        {/* 3. The Navigation Pill (Right) */}
+        <nav className="nav-pill-container">
+          {/* Desktop Links */}
+          <ul className={`nav-links-list ${isNavOpen ? "mobile-open" : ""}`}>
+            <li>
+              <Link
+                to="/"
+                className={`nav-link-item ${isActive("/")}`}
+                onClick={() => setIsNavOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className={`nav-link-item ${isActive("/about")}`}
+                onClick={() => setIsNavOpen(false)}
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/outreaches"
+                className={`nav-link-item ${isActive("/outreaches")}`}
+                onClick={() => setIsNavOpen(false)}
+              >
+                Outreaches
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/executives"
+                className={`nav-link-item ${isActive("/executives")}`}
+                onClick={() => setIsNavOpen(false)}
+              >
+                Meet the Team
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className={`nav-link-item ${isActive("/contact")}`}
+                onClick={() => setIsNavOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/donate"
+                className="nav-link-item donate-btn"
+                onClick={() => setIsNavOpen(false)}
+              >
+                Donate
+              </Link>
+            </li>
+          </ul>
 
-          <li>
-            <Link
-              to="/executives"
-              className={`pill-link-item ${isActive("/executives")}`}
-              onClick={() => setIsNavOpen(false)}
-            >
-              Meet the Team
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className={`pill-link-item ${isActive("/contact")}`}
-              onClick={() => setIsNavOpen(false)}
-            >
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/donate"
-              className="pill-link-item pill-donate-btn"
-              onClick={() => setIsNavOpen(false)}
-            >
-              Donate
-            </Link>
-          </li>
-        </ul>
+          {/* Mobile Toggle (Hamburger) - Lives inside the pill on mobile */}
+          <div
+            className="mobile-menu-toggle"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          >
+            <i className={`fas ${isNavOpen ? "fa-times" : "fa-bars"}`}></i>
+          </div>
+        </nav>
+      </div>
 
-        {/* Mobile Hamburger (Only visible on small screens) */}
-        <div
-          className="pill-mobile-toggle"
-          onClick={() => setIsNavOpen(!isNavOpen)}
-        >
-          <i className={`fas ${isNavOpen ? "fa-times" : "fa-bars"}`}></i>
-        </div>
-      </header>
-
-      {/* Spacer: Since the header is "fixed" (floating), it doesn't take up space in the document flow.
-         We add a hidden div or margin to prevent the Hero section from being hidden behind the navbar.
-      */}
+      {/* Spacer to prevent content overlap */}
       <div style={{ height: "0px" }}></div>
     </>
   );
