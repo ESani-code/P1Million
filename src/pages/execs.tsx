@@ -69,9 +69,9 @@ const Execs = () => {
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766173501/image4_zxz991.jpg",
     },
     {
-      name: "Oludamilola Olayinka-Davis",
+      name: "Olayinka-Davids Oludamilola",
       position: "Welfare Officer",
-      quote: "Let love lead",
+      quote: "What counts in life is not the mere fact that we have lived. It is what difference we have made to the lives of others that will determine the significance of the life we lead.",
       image:
         "https://res.cloudinary.com/don03rsnm/image/upload/v1766174804/image3_y2rluu.jpg",
     },
